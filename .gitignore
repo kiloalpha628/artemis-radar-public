@@ -1,0 +1,29 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local data and tools; committed fixtures stay tracked
+/data/
+/raw/
+/public/
+/tmp/
+*.log
+.codex/
+.agents/
+.vscode/
+.idea/
+.DS_Store

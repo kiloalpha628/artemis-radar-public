@@ -1,0 +1,1820 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-27T17:45:16.807586+00:00",
+  "fixtures": [
+    {
+      "path": "real/index.json",
+      "bytes": 308,
+      "sha256": "d8316cdc08ad72a449732125f2737cda0b78b8e9e8df3a19d0f74f0dfed859ea",
+      "product": "top-level index",
+      "field": null,
+      "acquisition_time": null,
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": null,
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": null,
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Configured sites and site index paths."
+    },
+    {
+      "path": "real/KICT/index.json",
+      "bytes": 26648,
+      "sha256": "ea87a94a48a75e3ba85ee6bb320c50484a9b0568ddc2a3094d44b714a15b079a",
+      "product": "site index",
+      "field": null,
+      "acquisition_time": "2024-05-19T23:58:10+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "KICT retained cycles, newest first (revision 1)."
+    },
+    {
+      "path": "real/KICT/20240519_235810/cycle.json",
+      "bytes": 23056,
+      "sha256": "bc2b2ecddeed2bfbd34a4832d4a6d9723b12e96e10b3676df105d6702386d1e2",
+      "product": "cycle manifest",
+      "field": null,
+      "acquisition_time": "2024-05-19T23:58:10+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Every product and volume of the cycle (revision 1)."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e0_reflectivity.png",
+      "bytes": 8402,
+      "sha256": "86bc48a704c0acb9e3a58190a5d1a17c534b856e9205f4fde51e876fb5cd6e86",
+      "product": "image e0",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-20T00:00:50.814000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e0_velocity.png",
+      "bytes": 8913,
+      "sha256": "3a3ffa8e3b21110a9eb5f59d5bc14018c2f4b310ceb143e321619566c833511c",
+      "product": "image e0",
+      "field": "velocity",
+      "acquisition_time": "2024-05-20T00:01:08.306000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e0_correlation_coefficient.png",
+      "bytes": 11297,
+      "sha256": "a6eb3a3724823cca47ca2399c6eb77f8eed2d3eab041dd30b7b929d058617f0b",
+      "product": "image e0",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2024-05-20T00:00:50.814000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e1_reflectivity.png",
+      "bytes": 7119,
+      "sha256": "d04e0e039461995d80f91a049e536ee706a06c508aaeb847183d0a3cd975d252",
+      "product": "image e1",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-19T23:58:50.681000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e1_velocity.png",
+      "bytes": 7299,
+      "sha256": "dd9d88c4917cf91764f5bb0792d3f46162782d5a7e2d018aeac31bd0deac5daa",
+      "product": "image e1",
+      "field": "velocity",
+      "acquisition_time": "2024-05-19T23:59:08.241000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e1_correlation_coefficient.png",
+      "bytes": 7920,
+      "sha256": "eceaab31cbdd3deed51aac7787ed98d1882d7d0a11c0160de982aeb4a1c6d698",
+      "product": "image e1",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2024-05-19T23:58:50.681000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e2_reflectivity.png",
+      "bytes": 7127,
+      "sha256": "fc1af040554b87a403ed9e15da1d430beb44f25afa1b224986c269f3ef80def2",
+      "product": "image e2",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-19T23:59:30.961000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e2_velocity.png",
+      "bytes": 7357,
+      "sha256": "b12a3c6b0411a45a691e89e736187ac4d9c566368955272b9c7a279c65d4b9fe",
+      "product": "image e2",
+      "field": "velocity",
+      "acquisition_time": "2024-05-19T23:59:47.206000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e2_correlation_coefficient.png",
+      "bytes": 6787,
+      "sha256": "39fa44c3bdf821fceacdded243e8429f95270697a76dea81fc59dafcdd1558e2",
+      "product": "image e2",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2024-05-19T23:59:30.961000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e3_reflectivity.png",
+      "bytes": 6732,
+      "sha256": "c7ef38b92e0dc8b1a60b192d1d344c1a7d156f5cd3ff04cf1a329af8d3c6b9ed",
+      "product": "image e3",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-20T00:00:10.193000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e3_velocity.png",
+      "bytes": 6835,
+      "sha256": "287b0ce077fb719fd0d8d3f936c9d4d9ef8fd145613df735de448b9b9fb4f198",
+      "product": "image e3",
+      "field": "velocity",
+      "acquisition_time": "2024-05-20T00:00:10.193000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/e3_correlation_coefficient.png",
+      "bytes": 5589,
+      "sha256": "1cfa43013cb768beb276ae0ec91e85f4a9854639defb9b258a6799308436acb9",
+      "product": "image e3",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2024-05-20T00:00:10.193000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KICT/20240519_235810/volume_polar_reflectivity.bin.gz",
+      "bytes": 901295,
+      "sha256": "3e89075944e402e1cda20b86521299d68df83038f808d04d0bfca9257406ec9e",
+      "product": "polar volume",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-20T00:00:50.814000Z",
+      "units": "dBZ",
+      "crs": "radar-centred polar: azimuth degrees clockwise from true north, elevation degrees, slant range m; radar at WGS84 latitude/longitude, altitude m above mean sea level",
+      "dimensions": [
+        6120,
+        392
+      ],
+      "axis_order": "ray (sweeps in ascending elevation, end to end), gate",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Cleaned reflectivity, 14 sweeps, the source of the grid."
+    },
+    {
+      "path": "real/KICT/20240519_235810/volume_grid_reflectivity.bin.gz",
+      "bytes": 46767,
+      "sha256": "bebe9b945c884f7aae47651fa519a9da8fce288e80104dfa6bc944a5b02e992e",
+      "product": "grid volume",
+      "field": "reflectivity",
+      "acquisition_time": "2024-05-20T00:00:50.814000Z",
+      "units": "dBZ",
+      "crs": "+proj=aeqd +lat_0=37.65444564819336 +lon_0=-97.44305419921875 +datum=WGS84 +units=m +no_defs; z metres above mean sea level",
+      "dimensions": [
+        15,
+        101,
+        101
+      ],
+      "axis_order": "z (bottom up), y (south to north), x (west to east)",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "synthetic": false,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:01.992058+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Cartesian grid made from the polar volume in the same cycle; includes no-coverage, no-echo, and clutter cells."
+    },
+    {
+      "path": "real/KTLX/index.json",
+      "bytes": 26669,
+      "sha256": "3105fe474c46e75e30d7aa035a6f604976eb8f68f1afa65096fb4c91c420868d",
+      "product": "site index",
+      "field": null,
+      "acquisition_time": "2013-05-20T20:20:58+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "KTLX retained cycles, newest first (revision 1)."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/cycle.json",
+      "bytes": 23077,
+      "sha256": "2228e2b7970ed5521df8e3aebb673ef9d279f4b439d65aee876ea8206d510e3a",
+      "product": "cycle manifest",
+      "field": null,
+      "acquisition_time": "2013-05-20T20:20:58+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Every product and volume of the cycle (revision 1)."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e0_reflectivity.png",
+      "bytes": 10695,
+      "sha256": "595d0677b4db7eb60385ceaf293d831830963b97ca19dd2c465c125691a3d78c",
+      "product": "image e0",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:20:58.319000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e0_velocity.png",
+      "bytes": 9467,
+      "sha256": "191cccf34702409fb1777a15b094a4beffcf7967c42d3249e98f772b864ae632",
+      "product": "image e0",
+      "field": "velocity",
+      "acquisition_time": "2013-05-20T20:21:15.543000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e0_correlation_coefficient.png",
+      "bytes": 11005,
+      "sha256": "3b256db60799bb81fb17b818015c84fed075a03fa03333e3385bd5a59596a49a",
+      "product": "image e0",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2013-05-20T20:20:58.319000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 0.483 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e1_reflectivity.png",
+      "bytes": 10672,
+      "sha256": "7d5bafe2748708e1109a42ad9b41e7fd1ff5a4d913c76ca53bf3f160264ddf72",
+      "product": "image e1",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:21:30.276000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e1_velocity.png",
+      "bytes": 9581,
+      "sha256": "56aa55da2f7fb788a093dca2f4f26286f461641645d47a6bfb23e3a327753a00",
+      "product": "image e1",
+      "field": "velocity",
+      "acquisition_time": "2013-05-20T20:21:47.483000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e1_correlation_coefficient.png",
+      "bytes": 9837,
+      "sha256": "c7cdad3c1e3f14f36c283ac62bb1345ac71b3b2952c716f7f85b6885f0235920",
+      "product": "image e1",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2013-05-20T20:21:30.276000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 0.879 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e2_reflectivity.png",
+      "bytes": 10668,
+      "sha256": "e0a5bce9612c9a4415b980dff8da9005d0de9c94e1837efabfbb16decb2496d6",
+      "product": "image e2",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:22:02.245000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e2_velocity.png",
+      "bytes": 9927,
+      "sha256": "a62cf3ae8d120170ef29ae9274f3ce5d97afe03ab58fb36580a163512bd1fc88",
+      "product": "image e2",
+      "field": "velocity",
+      "acquisition_time": "2013-05-20T20:22:19.469000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e2_correlation_coefficient.png",
+      "bytes": 9524,
+      "sha256": "8631c9632f6e73ac3c988cf31b127265e5da9fdc6da03b237c8dc5f278b64eb6",
+      "product": "image e2",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2013-05-20T20:22:02.245000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 1.318 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e3_reflectivity.png",
+      "bytes": 11256,
+      "sha256": "db48dfd84cff8d5a252359484610d77f4971096428ed54f46f22b293fd4361d7",
+      "product": "image e3",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:22:34.402000Z",
+      "units": "dBZ",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "reflectivity at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e3_velocity.png",
+      "bytes": 10307,
+      "sha256": "8a6ab18ce6a5908325b3d566ebcef01006d8806746763e13585c7e94a83f69e7",
+      "product": "image e3",
+      "field": "velocity",
+      "acquisition_time": "2013-05-20T20:22:34.402000Z",
+      "units": "m/s",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "velocity at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/e3_correlation_coefficient.png",
+      "bytes": 9613,
+      "sha256": "a9fbd37e56304cf4ac93789de53f6ff413650f914cafc7c4bfe3a8275d38ab9b",
+      "product": "image e3",
+      "field": "correlation_coefficient",
+      "acquisition_time": "2013-05-20T20:22:34.402000Z",
+      "units": "unitless",
+      "crs": "EPSG:3857 pixels; bounds [[south, west], [north, east]] in EPSG:4326 degrees",
+      "dimensions": [
+        256,
+        256
+      ],
+      "axis_order": "rows north to south, columns west to east (north-up image)",
+      "missing_value": "alpha 0 (fully transparent) where nothing is drawn: no coverage, no echo, below minimum_shown, or removed by clutter_filter; the image does not distinguish these",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "correlation_coefficient at 1.802 degrees, palette PNG."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/volume_polar_reflectivity.bin.gz",
+      "bytes": 1170110,
+      "sha256": "e1c2c695b2a3a5680a0b1047462b9b40dc8a93e5d67ffb8ede906dcf5b827ade",
+      "product": "polar volume",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:20:58.319000Z",
+      "units": "dBZ",
+      "crs": "radar-centred polar: azimuth degrees clockwise from true north, elevation degrees, slant range m; radar at WGS84 latitude/longitude, altitude m above mean sea level",
+      "dimensions": [
+        6120,
+        392
+      ],
+      "axis_order": "ray (sweeps in ascending elevation, end to end), gate",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Cleaned reflectivity, 14 sweeps, the source of the grid."
+    },
+    {
+      "path": "real/KTLX/20130520_202058/volume_grid_reflectivity.bin.gz",
+      "bytes": 51999,
+      "sha256": "59bcd4367b721968d85513241097f86befa0f0deed78c44a653506641364404a",
+      "product": "grid volume",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:20:58.319000Z",
+      "units": "dBZ",
+      "crs": "+proj=aeqd +lat_0=35.33305740356445 +lon_0=-97.27748107910156 +datum=WGS84 +units=m +no_defs; z metres above mean sea level",
+      "dimensions": [
+        15,
+        101,
+        101
+      ],
+      "axis_order": "z (bottom up), y (south to north), x (west to east)",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.372310+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "Cartesian grid made from the polar volume in the same cycle; includes no-coverage, no-echo, and clutter cells."
+    },
+    {
+      "path": "cases/KTLX_20130520_202058_debris.json",
+      "bytes": 14727,
+      "sha256": "448e25681f277be6aeacd7312c2a53eb6cbc03000a87db23220e93279146d415",
+      "product": "expected features",
+      "field": "reflectivity",
+      "acquisition_time": "2013-05-20T20:20:58.319000Z",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": false,
+      "site": "KTLX",
+      "retrieval_time": "2026-09-27T17:42:55Z",
+      "generated_at": "2026-09-27T17:45:16.803109+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+        "bytes": 9765153,
+        "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+        "published_at": "2025-06-28T17:30:25+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "description": "421 debris-signature gates in the KTLX polar volume."
+    },
+    {
+      "path": "revised/KICT/index.json",
+      "bytes": 26648,
+      "sha256": "d8ee6f8c20686fbd41994ded9f9c85fcac792e314f78a64fa69f36cc667a09e9",
+      "product": "site index",
+      "field": null,
+      "acquisition_time": "2024-05-19T23:58:10+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": true,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:12.607356+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "note": "Real source; the republication (a later LastModified) is simulated. Its files are identical to real/ and are not repeated.",
+      "description": "KICT retained cycles, newest first (revision 2)."
+    },
+    {
+      "path": "revised/KICT/20240519_235810/cycle.json",
+      "bytes": 23056,
+      "sha256": "a7f845201a17681504220c3170baffd3707c7ad847e3a6029081b33ac9fc9472",
+      "product": "cycle manifest",
+      "field": null,
+      "acquisition_time": "2024-05-19T23:58:10+00:00",
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "synthetic": true,
+      "site": "KICT",
+      "retrieval_time": "2026-09-27T17:28:26Z",
+      "generated_at": "2026-09-27T17:45:12.607356+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "source": {
+        "bucket": "unidata-nexrad-level2",
+        "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+        "bytes": 15630650,
+        "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+        "published_at": "2025-07-15T22:17:06+00:00"
+      },
+      "settings": {
+        "image_size": 256,
+        "range_km": 100.0,
+        "min_reflectivity_dbz": 10.0,
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0,
+        "dealias": true,
+        "reflectivity_palette": "Standard",
+        "volume_products": true,
+        "grid_spacing_km": 2.0,
+        "grid_level_m": 1000.0,
+        "storm_relative_velocity": true
+      },
+      "note": "Real source; the republication (a later LastModified) is simulated. Its files are identical to real/ and are not repeated.",
+      "description": "Every product and volume of the cycle (revision 2)."
+    },
+    {
+      "path": "synthetic/volumes.json",
+      "bytes": 5150,
+      "sha256": "8b7e8a885b360cef5986f4001195a9d2ac142d0930751519985e73d298550cc1",
+      "product": "volume descriptors",
+      "synthetic": true,
+      "site": null,
+      "field": "reflectivity",
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "missing_value": "an unavailable product is an entry with available false and a reason; null marks a setting not in use",
+      "source": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "description": "Descriptors of the synthetic pair and the features expected in the grid."
+    },
+    {
+      "path": "synthetic/volume_polar_reflectivity.bin.gz",
+      "bytes": 843,
+      "sha256": "faffcdb7fb425a9289898dffc14f46863275e60b7d0696d3a4bb4280e3710fa0",
+      "product": "polar volume",
+      "crs": "radar-centred polar, as the real polar volume",
+      "dimensions": [
+        720,
+        100
+      ],
+      "axis_order": "ray, gate",
+      "synthetic": true,
+      "site": null,
+      "field": "reflectivity",
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": "dBZ",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "source": null,
+      "description": "Two sweeps (0.5 and 1.5 degrees) with a 40 dBZ echo 20-30 km east at azimuth 85-95, clutter 24-28 km west, and no echo elsewhere. Not radar data."
+    },
+    {
+      "path": "synthetic/volume_grid_reflectivity.bin.gz",
+      "bytes": 217,
+      "sha256": "57928d751ebf48040a7c7161ed615d53a64e0353643ce10c9d43dd2607f31e34",
+      "product": "grid volume",
+      "crs": "+proj=aeqd +lat_0=37.6545 +lon_0=-97.4431 +datum=WGS84 +units=m +no_defs; z metres above mean sea level",
+      "dimensions": [
+        2,
+        61,
+        61
+      ],
+      "axis_order": "z, y (south to north), x (west to east)",
+      "synthetic": true,
+      "site": null,
+      "field": "reflectivity",
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": "dBZ",
+      "missing_value": "uint8 flag codes: 0 no coverage, 1 no echo, 2 clutter; values are codes 3-255, dBZ = code * 0.5 - 33",
+      "source": null,
+      "description": "Grid made from the synthetic polar volume."
+    },
+    {
+      "path": "invalid/truncated_grid.bin.gz",
+      "bytes": 108,
+      "sha256": "972e58a13dbdaeae59b9d0536e8b9033415c348c5fc4ddc21cabac55d9fd686b",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "synthetic/volume_grid_reflectivity.bin.gz cut to half its length, as by an interrupted transfer",
+      "expected_rejection": "sha256 does not match the manifest's (grid descriptor in synthetic/volumes.json); without a checksum, not a complete gzip stream"
+    },
+    {
+      "path": "invalid/truncated_cycle.json",
+      "bytes": 7685,
+      "sha256": "9101b8b5da4ea2121f806bff8691a9ce7cb38df12a09f6cc50eab63a9c809b55",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "real cycle.json cut to a third",
+      "expected_rejection": "not valid JSON"
+    },
+    {
+      "path": "invalid/unknown_schema_index.json",
+      "bytes": 26649,
+      "sha256": "9e5edc0320339602aff1da05a9d2e98a730a530e9a1eadea2a63639156338d44",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "real site index with schema_version 99",
+      "expected_rejection": "unsupported schema_version 99"
+    },
+    {
+      "path": "invalid/missing_fields_cycle.json",
+      "bytes": 22820,
+      "sha256": "1bad58c1dc8488e920dacb833d2e330d65b3172e21f20314ff504287be74a697",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "real cycle.json; e0_reflectivity.png lacks sweep_start and bounds",
+      "expected_rejection": "available product e0_reflectivity.png is missing sweep_start, bounds"
+    },
+    {
+      "path": "invalid/bad_site_index.json",
+      "bytes": 323,
+      "sha256": "7a4229932ba42273a6ae21d8210a2242d9e9a2ada1de24e5523c30c99f4d6bd7",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "real top-level index with the site '../KICT' added",
+      "expected_rejection": "invalid site identifier ../KICT"
+    },
+    {
+      "path": "invalid/empty_grid.bin.gz",
+      "bytes": 20,
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "product": "invalid payload",
+      "synthetic": true,
+      "site": null,
+      "field": null,
+      "acquisition_time": null,
+      "retrieval_time": null,
+      "generated_at": "2026-09-27T17:45:16.807586+00:00",
+      "processing_version": {
+        "version": "2026.09.27",
+        "pyart": "2.2.5"
+      },
+      "units": null,
+      "crs": null,
+      "dimensions": null,
+      "axis_order": null,
+      "missing_value": null,
+      "source": null,
+      "description": "a complete but empty gzip stream in place of a grid",
+      "expected_rejection": "sha256 does not match the manifest's; without a checksum, 0 bytes uncompressed"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Archived Level II volumes the real fixtures are made from. They are kept outside Git; tools/make_fixtures.py checks each file against its bytes and sha256 here.",
+  "bucket": "unidata-nexrad-level2",
+  "sources": [
+    {
+      "key": "2024/05/19/KICT/KICT20240519_235810_V06",
+      "bytes": 15630650,
+      "sha256": "88040fc98d959c017c63aec8c88f8fb0c9548624e6a480e7191dea5432d8c838",
+      "published_at": "2025-07-15T22:17:06+00:00",
+      "retrieved_at": "2026-09-27T17:28:26Z",
+      "description": "Wichita: storms northwest and south of the radar. The primary sample; the revised and invalid fixtures are derived from it.",
+      "revised_fixture": true
+    },
+    {
+      "key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+      "bytes": 9765153,
+      "sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+      "published_at": "2025-06-28T17:30:25+00:00",
+      "retrieved_at": "2026-09-27T17:42:55Z",
+      "description": "Oklahoma City (Twin Lakes): the Moore, Oklahoma EF5 tornado of May 20, 2013 crossing central Moore, about 20 km west of the radar. A tornado debris signature (low CC in strong reflectivity) on the lowest tilt.",
+      "debris_search": {"latitude": 35.34, "longitude": -97.48, "radius_km": 5.0, "max_correlation": 0.8, "min_dbz": 35.0}
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+x-common: &common
+  image: artemis-radar:local
+  build: .
+  pull_policy: build
+  user: "${RADAR_UID:-1000}:${RADAR_GID:-1000}"
+  restart: unless-stopped
+  read_only: true
+  tmpfs:
+    - /tmp:size=256m,mode=1777
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  logging:
+    driver: json-file
+    options: {max-size: "10m", max-file: "3"}
+
+services:
+  worker:
+    <<: *common
+    stop_grace_period: 2m
+    command: [python, app.py, worker]
+    environment:
+      RADAR_SITES: "${RADAR_SITES:?Set RADAR_SITES in .env}"
+      KEEP_CYCLES: "10"
+      IMAGE_SIZE: "${IMAGE_SIZE:-1536}"
+      POLL_SECONDS: "20"
+      RANGE_KM: "${RANGE_KM:-230}"
+      MIN_REFLECTIVITY_DBZ: "${MIN_REFLECTIVITY_DBZ-10}"
+      MIN_CORRELATION: "${MIN_CORRELATION-0.85}"
+      CLUTTER_MAX_DBZ: "${CLUTTER_MAX_DBZ:-35}"
+      DEALIAS_VELOCITY: "${DEALIAS_VELOCITY:-true}"
+      STORM_RELATIVE_VELOCITY: "${STORM_RELATIVE_VELOCITY:-true}"
+      REFLECTIVITY_PALETTE: "${REFLECTIVITY_PALETTE:-Standard}"
+      VOLUME_PRODUCTS: "${VOLUME_PRODUCTS:-true}"
+      GRID_SPACING_KM: "${GRID_SPACING_KM:-1}"
+      GRID_LEVEL_M: "${GRID_LEVEL_M:-500}"
+      DATA_DIR: /data
+      MIN_FREE_GB: "2"
+    volumes:
+      - type: bind
+        source: "${RADAR_STORAGE:-/srv/scratch/radar}"
+        target: /data
+        bind: {create_host_path: false}
+    cpus: 2.0
+    mem_limit: 4g
+    healthcheck:
+      test: [CMD, python, app.py, health]
+      interval: 60s
+      timeout: 5s
+      start_period: 180s
+      retries: 3
+
+  web:
+    <<: *common
+    command: [python, app.py, serve]
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - type: bind
+        source: "${RADAR_STORAGE:-/srv/scratch/radar}"
+        target: /data
+        read_only: true
+        bind: {create_host_path: false}
+    ports:
+      - "${RADAR_BIND_IP:-127.0.0.1}:${RADAR_PORT:-8096}:8080"
+    mem_limit: 256m
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

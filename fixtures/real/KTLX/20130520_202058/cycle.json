@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "site": "KTLX",
+  "id": "20130520_202058",
+  "revision": 1,
+  "source_key": "2013/05/20/KTLX/KTLX20130520_202058_V06.gz",
+  "source_sha256": "ac6b720362451c0998c41257691d4921c72a8d833237a4fbca29b95581edddd3",
+  "volume_start": "2013-05-20T20:20:58+00:00",
+  "published_at": "2025-06-28T17:30:25+00:00",
+  "downloaded_at": "2026-09-27T17:45:12.629748+00:00",
+  "rendered_at": "2026-09-27T17:45:16.372310+00:00",
+  "processing": {
+    "version": "2026.09.27",
+    "pyart": "2.2.5",
+    "settings": {
+      "image_size": 256,
+      "range_km": 100.0,
+      "min_reflectivity_dbz": 10.0,
+      "min_correlation": 0.85,
+      "clutter_max_dbz": 35.0,
+      "dealias": true,
+      "reflectivity_palette": "Standard",
+      "volume_products": true,
+      "grid_spacing_km": 2.0,
+      "grid_level_m": 1000.0,
+      "storm_relative_velocity": true
+    }
+  },
+  "source_bytes": 9765153,
+  "image_bytes": 122552,
+  "volume_bytes": 1222109,
+  "download_seconds": 0.008,
+  "render_seconds": 3.748,
+  "publication_to_ready_seconds": 39399291.372,
+  "products": [
+    {
+      "elevation_index": 0,
+      "elevation_degrees": 0.483,
+      "sweep_index": 0,
+      "field": "reflectivity",
+      "available": true,
+      "filename": "e0_reflectivity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:20:58.319000Z",
+      "sweep_end": "2013-05-20T20:21:14.924000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "dBZ",
+      "color_scale": {
+        "colormap": "Standard",
+        "minimum": -32.0,
+        "maximum": 95.0
+      },
+      "minimum_shown": 10.0,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e0_reflectivity.png",
+      "bytes": 10695,
+      "sha256": "595d0677b4db7eb60385ceaf293d831830963b97ca19dd2c465c125691a3d78c"
+    },
+    {
+      "elevation_index": 0,
+      "elevation_degrees": 0.483,
+      "sweep_index": 1,
+      "field": "velocity",
+      "available": true,
+      "filename": "e0_velocity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:21:15.543000Z",
+      "sweep_end": "2013-05-20T20:21:29.580000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "m/s",
+      "color_scale": {
+        "colormap": "NWSVel",
+        "minimum": -70,
+        "maximum": 70
+      },
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": true,
+      "url": "/KTLX/20130520_202058/e0_velocity.png",
+      "bytes": 9467,
+      "sha256": "191cccf34702409fb1777a15b094a4beffcf7967c42d3249e98f772b864ae632"
+    },
+    {
+      "elevation_index": 0,
+      "elevation_degrees": 0.483,
+      "sweep_index": 0,
+      "field": "correlation_coefficient",
+      "available": true,
+      "filename": "e0_correlation_coefficient.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:20:58.319000Z",
+      "sweep_end": "2013-05-20T20:21:14.924000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "unitless",
+      "color_scale": {
+        "colormap": "HomeyerRainbow",
+        "minimum": 0.2,
+        "maximum": 1.05
+      },
+      "minimum_shown": null,
+      "clutter_filter": null,
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e0_correlation_coefficient.png",
+      "bytes": 11005,
+      "sha256": "3b256db60799bb81fb17b818015c84fed075a03fa03333e3385bd5a59596a49a"
+    },
+    {
+      "elevation_index": 0,
+      "field": "storm_relative_velocity",
+      "available": false,
+      "reason": "No storm motion: winds aloft unavailable"
+    },
+    {
+      "elevation_index": 1,
+      "elevation_degrees": 0.879,
+      "sweep_index": 2,
+      "field": "reflectivity",
+      "available": true,
+      "filename": "e1_reflectivity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:21:30.276000Z",
+      "sweep_end": "2013-05-20T20:21:46.886000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "dBZ",
+      "color_scale": {
+        "colormap": "Standard",
+        "minimum": -32.0,
+        "maximum": 95.0
+      },
+      "minimum_shown": 10.0,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e1_reflectivity.png",
+      "bytes": 10672,
+      "sha256": "7d5bafe2748708e1109a42ad9b41e7fd1ff5a4d913c76ca53bf3f160264ddf72"
+    },
+    {
+      "elevation_index": 1,
+      "elevation_degrees": 0.879,
+      "sweep_index": 3,
+      "field": "velocity",
+      "available": true,
+      "filename": "e1_velocity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:21:47.483000Z",
+      "sweep_end": "2013-05-20T20:22:01.527000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "m/s",
+      "color_scale": {
+        "colormap": "NWSVel",
+        "minimum": -70,
+        "maximum": 70
+      },
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": true,
+      "url": "/KTLX/20130520_202058/e1_velocity.png",
+      "bytes": 9581,
+      "sha256": "56aa55da2f7fb788a093dca2f4f26286f461641645d47a6bfb23e3a327753a00"
+    },
+    {
+      "elevation_index": 1,
+      "elevation_degrees": 0.879,
+      "sweep_index": 2,
+      "field": "correlation_coefficient",
+      "available": true,
+      "filename": "e1_correlation_coefficient.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:21:30.276000Z",
+      "sweep_end": "2013-05-20T20:21:46.886000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "unitless",
+      "color_scale": {
+        "colormap": "HomeyerRainbow",
+        "minimum": 0.2,
+        "maximum": 1.05
+      },
+      "minimum_shown": null,
+      "clutter_filter": null,
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e1_correlation_coefficient.png",
+      "bytes": 9837,
+      "sha256": "c7cdad3c1e3f14f36c283ac62bb1345ac71b3b2952c716f7f85b6885f0235920"
+    },
+    {
+      "elevation_index": 1,
+      "field": "storm_relative_velocity",
+      "available": false,
+      "reason": "No storm motion: winds aloft unavailable"
+    },
+    {
+      "elevation_index": 2,
+      "elevation_degrees": 1.318,
+      "sweep_index": 4,
+      "field": "reflectivity",
+      "available": true,
+      "filename": "e2_reflectivity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:02.245000Z",
+      "sweep_end": "2013-05-20T20:22:18.850000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "dBZ",
+      "color_scale": {
+        "colormap": "Standard",
+        "minimum": -32.0,
+        "maximum": 95.0
+      },
+      "minimum_shown": 10.0,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e2_reflectivity.png",
+      "bytes": 10668,
+      "sha256": "e0a5bce9612c9a4415b980dff8da9005d0de9c94e1837efabfbb16decb2496d6"
+    },
+    {
+      "elevation_index": 2,
+      "elevation_degrees": 1.318,
+      "sweep_index": 5,
+      "field": "velocity",
+      "available": true,
+      "filename": "e2_velocity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:19.469000Z",
+      "sweep_end": "2013-05-20T20:22:33.516000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "m/s",
+      "color_scale": {
+        "colormap": "NWSVel",
+        "minimum": -70,
+        "maximum": 70
+      },
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": true,
+      "url": "/KTLX/20130520_202058/e2_velocity.png",
+      "bytes": 9927,
+      "sha256": "a62cf3ae8d120170ef29ae9274f3ce5d97afe03ab58fb36580a163512bd1fc88"
+    },
+    {
+      "elevation_index": 2,
+      "elevation_degrees": 1.318,
+      "sweep_index": 4,
+      "field": "correlation_coefficient",
+      "available": true,
+      "filename": "e2_correlation_coefficient.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:02.245000Z",
+      "sweep_end": "2013-05-20T20:22:18.850000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "unitless",
+      "color_scale": {
+        "colormap": "HomeyerRainbow",
+        "minimum": 0.2,
+        "maximum": 1.05
+      },
+      "minimum_shown": null,
+      "clutter_filter": null,
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e2_correlation_coefficient.png",
+      "bytes": 9524,
+      "sha256": "8631c9632f6e73ac3c988cf31b127265e5da9fdc6da03b237c8dc5f278b64eb6"
+    },
+    {
+      "elevation_index": 2,
+      "field": "storm_relative_velocity",
+      "available": false,
+      "reason": "No storm motion: winds aloft unavailable"
+    },
+    {
+      "elevation_index": 3,
+      "elevation_degrees": 1.802,
+      "sweep_index": 6,
+      "field": "reflectivity",
+      "available": true,
+      "filename": "e3_reflectivity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:34.402000Z",
+      "sweep_end": "2013-05-20T20:22:48.624000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "dBZ",
+      "color_scale": {
+        "colormap": "Standard",
+        "minimum": -32.0,
+        "maximum": 95.0
+      },
+      "minimum_shown": 10.0,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e3_reflectivity.png",
+      "bytes": 11256,
+      "sha256": "db48dfd84cff8d5a252359484610d77f4971096428ed54f46f22b293fd4361d7"
+    },
+    {
+      "elevation_index": 3,
+      "elevation_degrees": 1.802,
+      "sweep_index": 6,
+      "field": "velocity",
+      "available": true,
+      "filename": "e3_velocity.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:34.402000Z",
+      "sweep_end": "2013-05-20T20:22:48.624000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "m/s",
+      "color_scale": {
+        "colormap": "NWSVel",
+        "minimum": -70,
+        "maximum": 70
+      },
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "velocity_dealiased": true,
+      "url": "/KTLX/20130520_202058/e3_velocity.png",
+      "bytes": 10307,
+      "sha256": "8a6ab18ce6a5908325b3d566ebcef01006d8806746763e13585c7e94a83f69e7"
+    },
+    {
+      "elevation_index": 3,
+      "elevation_degrees": 1.802,
+      "sweep_index": 6,
+      "field": "correlation_coefficient",
+      "available": true,
+      "filename": "e3_correlation_coefficient.png",
+      "width": 256,
+      "height": 256,
+      "sweep_start": "2013-05-20T20:22:34.402000Z",
+      "sweep_end": "2013-05-20T20:22:48.624000Z",
+      "bounds": [
+        [
+          34.429768670221634,
+          -98.37862207071434
+        ],
+        [
+          36.22636261900034,
+          -96.17634008748877
+        ]
+      ],
+      "crs": "EPSG:3857",
+      "range_km": 100.0,
+      "units": "unitless",
+      "color_scale": {
+        "colormap": "HomeyerRainbow",
+        "minimum": 0.2,
+        "maximum": 1.05
+      },
+      "minimum_shown": null,
+      "clutter_filter": null,
+      "velocity_dealiased": null,
+      "url": "/KTLX/20130520_202058/e3_correlation_coefficient.png",
+      "bytes": 9613,
+      "sha256": "a9fbd37e56304cf4ac93789de53f6ff413650f914cafc7c4bfe3a8275d38ab9b"
+    },
+    {
+      "elevation_index": 3,
+      "field": "storm_relative_velocity",
+      "available": false,
+      "reason": "No storm motion: winds aloft unavailable"
+    }
+  ],
+  "volumes": [
+    {
+      "kind": "polar",
+      "field": "reflectivity",
+      "available": true,
+      "filename": "volume_polar_reflectivity.bin.gz",
+      "units": "dBZ",
+      "values": {
+        "dtype": "uint8",
+        "scale": 0.5,
+        "offset": -33.0,
+        "first_value_code": 3,
+        "formula": "dBZ = code * 0.5 - 33, for code >= 3",
+        "flags": {
+          "0": "no_coverage",
+          "1": "no_echo",
+          "2": "clutter"
+        }
+      },
+      "radar": {
+        "latitude": 35.33305740356445,
+        "longitude": -97.27748107910156,
+        "altitude_m": 388.0,
+        "altitude_datum": "mean sea level"
+      },
+      "time_reference": "2013-05-20T20:20:58Z",
+      "range": {
+        "first_gate_m": 2125.0,
+        "gate_spacing_m": 250.0,
+        "gates": 392,
+        "measured_along": "slant range to the gate centre"
+      },
+      "sweeps": [
+        {
+          "elevation_degrees": 0.483,
+          "sweep_index": 0,
+          "ray_start": 0,
+          "rays": 720,
+          "sweep_start": "2013-05-20T20:20:58.319000Z",
+          "sweep_end": "2013-05-20T20:21:14.924000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 0.879,
+          "sweep_index": 2,
+          "ray_start": 720,
+          "rays": 720,
+          "sweep_start": "2013-05-20T20:21:30.276000Z",
+          "sweep_end": "2013-05-20T20:21:46.886000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 1.318,
+          "sweep_index": 4,
+          "ray_start": 1440,
+          "rays": 720,
+          "sweep_start": "2013-05-20T20:22:02.245000Z",
+          "sweep_end": "2013-05-20T20:22:18.850000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 1.802,
+          "sweep_index": 6,
+          "ray_start": 2160,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:22:34.402000Z",
+          "sweep_end": "2013-05-20T20:22:48.624000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 2.417,
+          "sweep_index": 7,
+          "ray_start": 2520,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:22:49.413000Z",
+          "sweep_end": "2013-05-20T20:23:02.676000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 3.12,
+          "sweep_index": 8,
+          "ray_start": 2880,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:23:03.453000Z",
+          "sweep_end": "2013-05-20T20:23:16.725000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 3.999,
+          "sweep_index": 9,
+          "ray_start": 3240,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:23:17.612000Z",
+          "sweep_end": "2013-05-20T20:23:30.882000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 5.098,
+          "sweep_index": 10,
+          "ray_start": 3600,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:23:31.795000Z",
+          "sweep_end": "2013-05-20T20:23:44.304000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 6.416,
+          "sweep_index": 11,
+          "ray_start": 3960,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:23:45.240000Z",
+          "sweep_end": "2013-05-20T20:23:57.754000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 7.998,
+          "sweep_index": 12,
+          "ray_start": 4320,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:23:58.793000Z",
+          "sweep_end": "2013-05-20T20:24:11.127000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 10.02,
+          "sweep_index": 13,
+          "ray_start": 4680,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:24:12.120000Z",
+          "sweep_end": "2013-05-20T20:24:24.246000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 12.48,
+          "sweep_index": 14,
+          "ray_start": 5040,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:24:25.294000Z",
+          "sweep_end": "2013-05-20T20:24:37.480000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 15.601,
+          "sweep_index": 15,
+          "ray_start": 5400,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:24:38.666000Z",
+          "sweep_end": "2013-05-20T20:24:50.849000Z",
+          "clutter_filtered": true
+        },
+        {
+          "elevation_degrees": 19.512,
+          "sweep_index": 16,
+          "ray_start": 5760,
+          "rays": 360,
+          "sweep_start": "2013-05-20T20:24:52.203000Z",
+          "sweep_end": "2013-05-20T20:25:04.390000Z",
+          "clutter_filtered": true
+        }
+      ],
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "encoding": "gzip",
+      "byte_order": "little",
+      "bytes": 1170110,
+      "uncompressed_bytes": 2496960,
+      "sha256": "e1c2c695b2a3a5680a0b1047462b9b40dc8a93e5d67ffb8ede906dcf5b827ade",
+      "arrays": [
+        {
+          "name": "reflectivity",
+          "dtype": "|u1",
+          "shape": [
+            6120,
+            392
+          ],
+          "offset": 0,
+          "bytes": 2399040,
+          "axes": [
+            "ray",
+            "gate"
+          ],
+          "units": "dBZ"
+        },
+        {
+          "name": "azimuth",
+          "dtype": "<f4",
+          "shape": [
+            6120
+          ],
+          "offset": 2399040,
+          "bytes": 24480,
+          "axes": [
+            "ray"
+          ],
+          "units": "degrees clockwise from north"
+        },
+        {
+          "name": "elevation",
+          "dtype": "<f4",
+          "shape": [
+            6120
+          ],
+          "offset": 2423520,
+          "bytes": 24480,
+          "axes": [
+            "ray"
+          ],
+          "units": "degrees above horizontal"
+        },
+        {
+          "name": "time",
+          "dtype": "<f8",
+          "shape": [
+            6120
+          ],
+          "offset": 2448000,
+          "bytes": 48960,
+          "axes": [
+            "ray"
+          ],
+          "units": "seconds since 2013-05-20T20:20:58Z"
+        }
+      ],
+      "url": "/KTLX/20130520_202058/volume_polar_reflectivity.bin.gz"
+    },
+    {
+      "kind": "grid",
+      "field": "reflectivity",
+      "available": true,
+      "filename": "volume_grid_reflectivity.bin.gz",
+      "derived_from": "volume_polar_reflectivity.bin.gz",
+      "units": "dBZ",
+      "values": {
+        "dtype": "uint8",
+        "scale": 0.5,
+        "offset": -33.0,
+        "first_value_code": 3,
+        "formula": "dBZ = code * 0.5 - 33, for code >= 3",
+        "flags": {
+          "0": "no_coverage",
+          "1": "no_echo",
+          "2": "clutter"
+        }
+      },
+      "radar": {
+        "latitude": 35.33305740356445,
+        "longitude": -97.27748107910156,
+        "altitude_m": 388.0,
+        "altitude_datum": "mean sea level"
+      },
+      "time_reference": "2013-05-20T20:20:58Z",
+      "crs": {
+        "proj4": "+proj=aeqd +lat_0=35.33305740356445 +lon_0=-97.27748107910156 +datum=WGS84 +units=m +no_defs",
+        "origin": "radar location, x east and y north, metres"
+      },
+      "x": {
+        "first_m": -100000.0,
+        "spacing_m": 2000.0,
+        "count": 101,
+        "direction": "east"
+      },
+      "y": {
+        "first_m": -100000.0,
+        "spacing_m": 2000.0,
+        "count": 101,
+        "direction": "north"
+      },
+      "z": {
+        "first_m": 1000.0,
+        "spacing_m": 1000.0,
+        "count": 15,
+        "datum": "mean sea level"
+      },
+      "bounds": [
+        [
+          34.426743785930725,
+          -98.38978169233306
+        ],
+        [
+          36.229227286086264,
+          -96.16518046587015
+        ]
+      ],
+      "interpolation": "Nearest ray and gate of each sweep over the column, 4/3 effective earth radius beam heights; linear in height between adjacent sweeps when both have reflectivity, otherwise the nearer sweep's code; half a beamwidth (0.5 degrees) covered below the lowest and above the highest sweep; no terrain blocking.",
+      "minimum_shown": null,
+      "clutter_filter": {
+        "min_correlation": 0.85,
+        "clutter_max_dbz": 35.0
+      },
+      "encoding": "gzip",
+      "byte_order": "little",
+      "bytes": 51999,
+      "uncompressed_bytes": 153015,
+      "sha256": "59bcd4367b721968d85513241097f86befa0f0deed78c44a653506641364404a",
+      "arrays": [
+        {
+          "name": "reflectivity",
+          "dtype": "|u1",
+          "shape": [
+            15,
+            101,
+            101
+          ],
+          "offset": 0,
+          "bytes": 153015,
+          "axes": [
+            "z",
+            "y",
+            "x"
+          ],
+          "units": "dBZ"
+        }
+      ],
+      "url": "/KTLX/20130520_202058/volume_grid_reflectivity.bin.gz"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "synthetic": true,
+  "schema_version": 1,
+  "generated_at": "2026-09-27T17:45:16.807586+00:00",
+  "description": "Two sweeps (0.5 and 1.5 degrees) with a 40 dBZ echo 20-30 km east at azimuth 85-95, clutter 24-28 km west, and no echo elsewhere. Not radar data.",
+  "volumes": [
+    {
+      "kind": "polar",
+      "field": "reflectivity",
+      "available": true,
+      "filename": "volume_polar_reflectivity.bin.gz",
+      "units": "dBZ",
+      "values": {
+        "dtype": "uint8",
+        "scale": 0.5,
+        "offset": -33.0,
+        "first_value_code": 3,
+        "formula": "dBZ = code * 0.5 - 33, for code >= 3",
+        "flags": {
+          "0": "no_coverage",
+          "1": "no_echo",
+          "2": "clutter"
+        }
+      },
+      "radar": {
+        "latitude": 37.6545,
+        "longitude": -97.4431,
+        "altitude_m": 400.0,
+        "altitude_datum": "mean sea level"
+      },
+      "range": {
+        "first_gate_m": 500.0,
+        "gate_spacing_m": 1000.0,
+        "gates": 100,
+        "measured_along": "slant range to the gate centre"
+      },
+      "sweeps": [
+        {
+          "elevation_degrees": 0.5,
+          "ray_start": 0,
+          "rays": 360
+        },
+        {
+          "elevation_degrees": 1.5,
+          "ray_start": 360,
+          "rays": 360
+        }
+      ],
+      "encoding": "gzip",
+      "byte_order": "little",
+      "bytes": 843,
+      "uncompressed_bytes": 77760,
+      "sha256": "faffcdb7fb425a9289898dffc14f46863275e60b7d0696d3a4bb4280e3710fa0",
+      "arrays": [
+        {
+          "name": "reflectivity",
+          "dtype": "|u1",
+          "shape": [
+            720,
+            100
+          ],
+          "offset": 0,
+          "bytes": 72000,
+          "axes": [
+            "ray",
+            "gate"
+          ],
+          "units": "dBZ"
+        },
+        {
+          "name": "azimuth",
+          "dtype": "<f4",
+          "shape": [
+            720
+          ],
+          "offset": 72000,
+          "bytes": 2880,
+          "axes": [
+            "ray"
+          ],
+          "units": "degrees clockwise from north"
+        },
+        {
+          "name": "elevation",
+          "dtype": "<f4",
+          "shape": [
+            720
+          ],
+          "offset": 74880,
+          "bytes": 2880,
+          "axes": [
+            "ray"
+          ],
+          "units": "degrees above horizontal"
+        }
+      ]
+    },
+    {
+      "kind": "grid",
+      "field": "reflectivity",
+      "available": true,
+      "filename": "volume_grid_reflectivity.bin.gz",
+      "derived_from": "volume_polar_reflectivity.bin.gz",
+      "units": "dBZ",
+      "values": {
+        "dtype": "uint8",
+        "scale": 0.5,
+        "offset": -33.0,
+        "first_value_code": 3,
+        "formula": "dBZ = code * 0.5 - 33, for code >= 3",
+        "flags": {
+          "0": "no_coverage",
+          "1": "no_echo",
+          "2": "clutter"
+        }
+      },
+      "radar": {
+        "latitude": 37.6545,
+        "longitude": -97.4431,
+        "altitude_m": 400.0,
+        "altitude_datum": "mean sea level"
+      },
+      "crs": {
+        "proj4": "+proj=aeqd +lat_0=37.6545 +lon_0=-97.4431 +datum=WGS84 +units=m +no_defs"
+      },
+      "x": {
+        "first_m": -60000.0,
+        "spacing_m": 2000.0,
+        "count": 61,
+        "direction": "east"
+      },
+      "y": {
+        "first_m": -60000.0,
+        "spacing_m": 2000.0,
+        "count": 61,
+        "direction": "north"
+      },
+      "z": {
+        "first_m": 1000.0,
+        "spacing_m": 4000.0,
+        "count": 2,
+        "datum": "mean sea level"
+      },
+      "encoding": "gzip",
+      "byte_order": "little",
+      "bytes": 217,
+      "uncompressed_bytes": 7442,
+      "sha256": "57928d751ebf48040a7c7161ed615d53a64e0353643ce10c9d43dd2607f31e34",
+      "arrays": [
+        {
+          "name": "reflectivity",
+          "dtype": "|u1",
+          "shape": [
+            2,
+            61,
+            61
+          ],
+          "offset": 0,
+          "bytes": 7442,
+          "axes": [
+            "z",
+            "y",
+            "x"
+          ],
+          "units": "dBZ"
+        }
+      ]
+    }
+  ],
+  "expected_features": [
+    {
+      "description": "Echo 24 km east at 1000 m, between the two beams",
+      "array": "grid",
+      "index_zyx": [
+        0,
+        30,
+        42
+      ],
+      "code": 146,
+      "dbz": 40.0
+    },
+    {
+      "description": "Clutter 26 km west at 1000 m",
+      "array": "grid",
+      "index_zyx": [
+        0,
+        30,
+        17
+      ],
+      "code": 2,
+      "dbz": null
+    },
+    {
+      "description": "No echo 24 km north at 1000 m",
+      "array": "grid",
+      "index_zyx": [
+        0,
+        42,
+        30
+      ],
+      "code": 1,
+      "dbz": null
+    },
+    {
+      "description": "No coverage 24 km east at 5000 m, above the highest beam",
+      "array": "grid",
+      "index_zyx": [
+        1,
+        30,
+        42
+      ],
+      "code": 0,
+      "dbz": null
+    },
+    {
+      "description": "No coverage at the grid corner, beyond range",
+      "array": "grid",
+      "index_zyx": [
+        0,
+        0,
+        0
+      ],
+      "code": 0,
+      "dbz": null
+    }
+  ]
+}
