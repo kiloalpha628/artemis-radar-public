@@ -39,8 +39,8 @@ Use a Linux host with Docker Engine and the Docker Compose v2 plugin, outbound H
 Clone the repository and copy the example configuration:
 
 ```bash
-git clone https://github.com/kiloalpha628/artemis-radar.git
-cd artemis-radar
+git clone https://github.com/kiloalpha628/artemis-radar-public.git
+cd artemis-radar-public
 cp .env.example .env
 id -u
 id -g
@@ -72,11 +72,11 @@ The bind mount does not create a missing host directory automatically. If using 
 
 ### Komodo deployment
 
-Create a Git-backed Stack using `kiloalpha628/artemis-radar`, branch `main`, run directory `.`, and compose file `compose.yaml` (also Komodo's default). Select your GitHub provider account and put the `.env.example` values in the Stack's Environment section.
+Create a Git-backed Stack using `kiloalpha628/artemis-radar-public`, branch `main`, run directory `.`, and compose file `compose.yaml` (also Komodo's default). Select your GitHub provider account and put the `.env.example` values in the Stack's Environment section.
 
 Set **Run Build on**, **Auto Pull off**, **Poll for Updates off**, and **Auto Update off**. Save the settings, then use **Deploy**. `artemis-radar:local` is built on the deployment host; it is not a published Docker Hub image. Both services explicitly use `pull_policy: build` so Compose builds from the repository rather than attempting to fetch that tag. Repeated builds reuse Docker's build cache.
 
-If an earlier deployment reports `pull access denied for artemis-radar`, confirm Auto Pull is disabled, retrieve the latest `main` configuration, and deploy again. Do not use the image Pull action for this stack. Seeing the public `python:3.12-slim-bookworm` base image download during the build is expected.
+If an earlier deployment reports `pull access denied for artemis-radar-public`, confirm Auto Pull is disabled, retrieve the latest `main` configuration, and deploy again. Do not use the image Pull action for this stack. Seeing the public `python:3.12-slim-bookworm` base image download during the build is expected.
 
 The default HTTP binding is loopback, port 8096. Check locally on the deployment host:
 
